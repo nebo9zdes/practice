@@ -8,9 +8,9 @@ while True:
         print('Вы угадали, поздравляем!')
         break
 
-    if num1 >= num2:
+    if num1 > num2:
         print('Слишком мало, попробуйте еще раз')
 
-    if num1 <= num2:
+    if num1 < num2:
         print('Слишком много, попробуйте еще раз')
     num2 = int(input())
