@@ -7,7 +7,7 @@ while True:
     if num1 == num2:
         print('Вы угадали, поздравляем!')
         break
-    
+
     if num1 >= num2:
         print('Слишком мало, попробуйте еще раз')
 
