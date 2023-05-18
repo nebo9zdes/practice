@@ -5,3 +5,20 @@ answer = ["Бесспорно", "Предрешено", "Никаких сомн
 print('Привет Мир, я магический шар, и я знаю ответ на любой твой вопрос.')
 name = input('Как тебя звать?')
 print(f'Привет, {name}')
+
+def magic():
+    while True:
+        question = input('Задай вопрос')
+        print(random.choice(answer))
+        break
+
+magic()
+
+while True:
+    print('Хочешь задать ещё один вопрос?')
+    answer_2 = input('Введи "Да", если хочешь. Или "Нет", если не хочешь')
+    if answer_2 == 'Да':
+        magic()
+    else:
+        print('Возвращайся, если возникнут вопросы!')
+        break
