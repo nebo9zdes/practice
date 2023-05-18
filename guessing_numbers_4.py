@@ -7,7 +7,7 @@ def is_valid(n):
 
 def game():
     while True:
-        right_n = input('Введите праву границу угадываемого диапазона чисел')
+        right_n = input('Введите правую границу угадываемого диапазона чисел')
         num1 = random.randint(1, int(right_n) + 1)
         num2 = input(f'Введите число от 1 до {right_n}?')
         if 1 <= int(num2) <= int(right_n) == False:
