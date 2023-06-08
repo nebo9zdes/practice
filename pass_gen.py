@@ -8,7 +8,7 @@ punctuation = '!#$%&*+-=?@^_'
 chars = ''
 
 n = input('Укажите количество паролей для генерации:')
-N = input('Укажите длину одного пароля:')
+length = input('Укажите длину одного пароля:')
 num = input('Включать цифры? (y/n)')
 low_c = input('Включать прописные буквы? (y/n)')
 up_c = input('Включать строчные буквы? (y/n)')
@@ -27,4 +27,12 @@ if pun_c == 'y':
 if pun_b == 'y':
     for c in 'il1Lo0O':
         chars = chars.replace(c, '')
-print(chars)
+
+
+def generate_password(length, chars):
+    password = ''
+    for _ in range(int(length)):
+        password += random.choice(chars)
+    print(password)
+
+generate_password(length, chars)
