@@ -7,21 +7,9 @@ punctuation = '!#$%&*+-=?@^_'
 
 chars = ''
 
-print('Введите следующие данные:')
-n = int(input('Количество паролей для генерации'))
-N = int(input('Длина одного пароля'))
-
-print('Включать прописные буквы?')
-answer = input('Y или N')
-if answer == 'Y':
-    chars += lowercase_letters
-else:
-    chars += ''
-
-print('Включать строчные буквы?')
-answer = input('Y или N')
-if answer == 'Y':
-    chars += uppercase_letters
-else:
-    chars += ''
-print(chars)
+n = input('Укажите количество паролей для генерации:')
+N = input('Укажите длину одного пароля:')
+low_c = input('Включать прописные буквы? (y/n)')
+up_c = input('Включать строчные буквы? (y/n)')
+pun_c = input('Включать символы "!#$%&*+-=?@^_"? (y/n)')
+pun_b = input('Исключать неоднозначные символы "il1Lo0O"? (y/n)')
