@@ -28,11 +28,13 @@ if pun_b == 'y':
     for c in 'il1Lo0O':
         chars = chars.replace(c, '')
 
-
+#функция генерации пароля
 def generate_password(length, chars):
     password = ''
     for _ in range(int(length)):
         password += random.choice(chars)
     print(password)
 
-generate_password(length, chars)
+#генерируем необходимое количество паролей
+for i in range(int(n)):
+    generate_password(length, chars)
